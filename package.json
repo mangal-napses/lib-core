@@ -26,7 +26,6 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/logging-winston": "^5.1.2",
-    "@serdnam/pino-cloudwatch-transport": "^1.0.4",
     "app-module-path": "^2.2.0",
     "aws-sdk": "^2.1207.0",
     "cls-hooked": "^4.2.2",
@@ -37,6 +36,7 @@
     "nodemon": "^2.0.19",
     "nyc": "^15.1.0",
     "pino": "^8.14.1",
+    "pino-cloudwatch": "^0.7.0",
     "ramda": "^0.26.1",
     "supervisor": "^0.12.0",
     "uuid": "^8.3.2",

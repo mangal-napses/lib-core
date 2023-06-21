@@ -15,14 +15,14 @@ const initPino = () => {
 			target: './pino-stream'
 		},
 		cloudwatch: {
-			target: '@serdnam/pino-cloudwatch-transport',
+			target: 'pino-cloudwatch',
 			options: {
-				logGroupName: config.providerConfig.logGroupName,
-				logStreamName: config.providerConfig.logStreamName,
-				awsRegion: config.providerConfig.region,
-				awsAccessKeyId: config.providerConfig.accessKeyId,
-				awsSecretAccessKey: config.providerConfig.secretKey,
-				interval: 10
+				group: config.providerConfig.logGroupName,
+				stream: config.providerConfig.logStreamName,
+				aws_region: config.providerConfig.region,
+				aws_access_key_id: config.providerConfig.accessKeyId,
+				aws_secret_access_key: config.providerConfig.secretKey,
+				interval: 100
 			}
 		},
 		terminal: {
